@@ -1,0 +1,22 @@
+.game-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #121d2c;
+  padding: 15px;
+  font-size: 14px;
+
+  & .tag {
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: #154656;
+    color: #86cbe2;
+  }
+
+  & .genre-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 1;
+    margin-top: 20px;
+  }
+}

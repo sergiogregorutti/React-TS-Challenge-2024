@@ -1,4 +1,4 @@
-import { Game } from "src/types";
+import { Game } from "src/lib/definitions/game";
 
 export const mockGames: Game[] = [
   // Racing Games

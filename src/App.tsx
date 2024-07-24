@@ -1,6 +1,7 @@
 import { FC } from "react";
 
-import { mockGames } from "src/mockData";
+import Card from './components/Card';
+import { mockGames } from "src/lib/data/games";
 
 const allGames = mockGames;
 
@@ -8,8 +9,11 @@ const App: FC = () => {
   return (
     <div className="min-h-screen bg-pageBg text-white">
       <h1 className="mb-10 text-4xl uppercase">Game store app</h1>
-      {/* @TODO Do something with allGames array */}
-      Theres {allGames.length} games
+      <div className="cards-wrapper">
+        {allGames.map((game, index) => (
+          <Card key={index} game={game} />
+        ))}
+      </div>
     </div>
   );
 };
